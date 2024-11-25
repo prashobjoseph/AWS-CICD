@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  GlueJob:
+    Type: AWS::Glue::Job
+    Properties:
+      Command:
+        Name: CICD
+        ScriptLocation: s3://bdjul2024/Bronze/CICD.py
+      Role: arn:aws:iam::430006376054:role/AWSGlueServiceRole-Uttam
+      DefaultArguments:
+        "--key1": "value1"
+        "--key2": "value2"
+      ExecutionProperty:
+        MaxConcurrentRuns: 2
+      MaxRetries: 0
+      Name: CICD
+      Description: Your Glue Job Description
+      Timeout: 10
+
