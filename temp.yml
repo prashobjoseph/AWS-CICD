@@ -5,7 +5,7 @@ Resources:
     Properties:
       Command:
         Name: CICD
-        ScriptLocation: s3://bdjul2024/Bronze/CICD.py
+        ScriptLocation: s3://bdjul2024/Bronze/yamlfiles/CICD.py
       Role: arn:aws:iam::430006376054:role/AWSGlueServiceRole-Uttam
       DefaultArguments:
         "--key1": "value1"
