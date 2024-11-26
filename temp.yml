@@ -11,7 +11,7 @@ Resources:
         "--key1": "value1"
         "--key2": "value2"
       ExecutionProperty:
-        MaxConcurrentRuns: 2
+        MaxConcurrentRuns: 3
       MaxRetries: 0
       Name: CICD
       Description: Your Glue Job Description
