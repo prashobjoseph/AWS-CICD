@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+  build:
+    commands:
+      - echo "Zipping the Lambda function and AppSpec file"
+      - zip -r function.zip lambda_function.py appspec.yml
+artifacts:
+  files:
+    - function.zip
+    - appspec.yml
